@@ -60,7 +60,7 @@ const KanbanBoard = ({ boardId }) => {
     return (
         <div className="bg-white rounded-xl shadow p-6">
             <div className="flex justify-between mb-4">
-                <h4 className="font-bold">Kanban Board</h4>
+                <h4 className="font-bold">Create your Task</h4>
                 <button
                     onClick={() => setShowModal(true)}
                     className="bg-green-600 text-white px-3 py-1 rounded"

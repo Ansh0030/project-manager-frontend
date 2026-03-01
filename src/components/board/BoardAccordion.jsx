@@ -22,7 +22,7 @@ const BoardAccordion = ({ board }) => {
             {open && (
                 <div className="flex gap-6 p-6 bg-gray-50">
                     {/* 60% Kanban */}
-                    <div className="w-3/5">
+                    <div className="w-4/5">
                         <KanbanBoard boardId={board._id} />
                     </div>
 
