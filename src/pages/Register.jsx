@@ -33,9 +33,9 @@ const Register = () => {
                 {/* Left side - illustration */}
                 <div className="w-1/2 bg-purple-50 flex items-center justify-center">
                     <img
-                        src="https://undraw.co/api/illustrations/undraw_team_work_lh5a.svg"
+                        src="https://izood.net/wp-content/uploads/2022/03/Backlog-Program-vs-Project-Manager-680x450-1.png"
                         alt="Project Management Illustration"
-                        className="w-[80%] h-[80%] object-contain"
+                        className="w-[100%] h-[100%] object-cover"
                     />
                 </div>
 

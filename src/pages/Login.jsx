@@ -71,9 +71,9 @@ const Login = () => {
                 {/* Right side - illustration */}
                 <div className="w-1/2 bg-purple-50 flex items-center justify-center">
                     <img
-                        src="https://undraw.co/api/illustrations/undraw_project_management_lh5a.svg"
+                        src="https://cdn.prod.website-files.com/634681057b887c6f4830fae2/6712a2114bb4a042ff3a684d_6367dd6a2529d1f48e34d352_62d84dc487901c5c3a5f0bd5_Technical%252520Program%252520Manager.png"
                         alt="Project Management Illustration"
-                        className="w-[80%] h-[80%] object-contain"
+                        className="w-[100%] h-[100%] object-cover"
                     />
                 </div>
 
