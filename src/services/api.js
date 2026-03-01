@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:8000/api",
+    baseURL: "https://project-manager-backend-kes1.onrender.com",
 });
 
 api.interceptors.request.use((config) => {
@@ -24,7 +24,7 @@ api.interceptors.response.use(
                 const refreshToken = localStorage.getItem("refreshToken");
 
                 const response = await axios.post(
-                    "http://localhost:5000/api/auth/refresh",
+                    "https://project-manager-backend-kes1.onrender.com/auth/refresh",
                     { refreshToken }
                 );
 
