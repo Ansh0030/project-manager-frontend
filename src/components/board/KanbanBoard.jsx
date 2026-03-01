@@ -72,7 +72,7 @@ const KanbanBoard = ({ boardId }) => {
             </div>
 
             <DragDropContext onDragEnd={onDragEnd}>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-3 gap-4 border">
                     {columns.map((column) => (
                         <Droppable droppableId={column} key={column}>
                             {(provided, snapshot) => (
@@ -81,7 +81,7 @@ const KanbanBoard = ({ boardId }) => {
                                     {...provided.droppableProps}
                                     className={`p-4 rounded min-h-[200px] ${
                                         snapshot.isDraggingOver ? "bg-gray-200" : "bg-purple-50"
-                                    }`}
+                                    } border border-gray-400 rounded-md`}
                                 >
                                     <h5 className="font-semibold mb-3 text-purple-700">{column}</h5>
                                     <div className="space-y-3">

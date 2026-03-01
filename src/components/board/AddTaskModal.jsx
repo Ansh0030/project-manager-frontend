@@ -68,15 +68,6 @@ const AddTaskModal = ({ boardId, onClose, onTaskCreated }) => {
                         >
                             Create
                         </button>
-
-                        {/* Dummy delete button */}
-                        <button
-                            type="button"
-                            onClick={() => alert("Delete task dummy button")}
-                            className="px-4 py-2 bg-gray-400 text-white rounded-lg hover:bg-gray-500 transition"
-                        >
-                            Delete
-                        </button>
                     </div>
                 </form>
             </div>
