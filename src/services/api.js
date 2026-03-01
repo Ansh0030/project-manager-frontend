@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://project-manager-backend-steel.vercel.app";
-
 const api = axios.create({
-    baseURL: API_BASE_URL,
+    baseURL: "https://project-manager-backend-steel.vercel.app/api",
 });
 
 api.interceptors.request.use((config) => {
@@ -26,7 +24,7 @@ api.interceptors.response.use(
                 const refreshToken = localStorage.getItem("refreshToken");
 
                 const response = await axios.post(
-                    `${API_BASE_URL}/auth/refresh`,
+                    "https://project-manager-backend-steel.vercel.app/api/auth/refresh",
                     { refreshToken }
                 );
 
