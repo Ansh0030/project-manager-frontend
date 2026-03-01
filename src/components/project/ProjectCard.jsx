@@ -6,14 +6,10 @@ const ProjectCard = ({ project }) => {
     return (
         <div
             onClick={() => navigate(`/project/${project._id}`)}
-            className="bg-white shadow-md rounded-xl p-6 cursor-pointer hover:shadow-lg transition"
+            className="bg-white shadow-md rounded-2xl p-6 cursor-pointer hover:shadow-xl transition transform hover:-translate-y-1"
         >
-            <h2 className="text-lg font-semibold">
-                {project.name}
-            </h2>
-            <p className="text-sm text-gray-500 mt-2">
-                {project.description}
-            </p>
+            <h2 className="text-xl font-semibold text-purple-700">{project.name}</h2>
+            <p className="text-gray-600 mt-2">{project.description}</p>
         </div>
     );
 };
