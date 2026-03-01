@@ -27,46 +27,62 @@ const Register = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100">
-            <div className="bg-white p-8 rounded-xl shadow-md w-96">
-                <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 to-purple-200">
+            <div className="bg-white rounded-3xl shadow-2xl flex w-[900px] h-[600px] overflow-hidden">
 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        className="w-full border p-2 rounded"
-                        onChange={handleChange}
+                {/* Left side - illustration */}
+                <div className="w-1/2 bg-purple-50 flex items-center justify-center">
+                    <img
+                        src="https://undraw.co/api/illustrations/undraw_team_work_lh5a.svg"
+                        alt="Project Management Illustration"
+                        className="w-[80%] h-[80%] object-contain"
                     />
+                </div>
 
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        className="w-full border p-2 rounded"
-                        onChange={handleChange}
-                    />
+                {/* Right side - form */}
+                <div className="w-1/2 p-12 flex flex-col justify-center">
+                    <h1 className="text-4xl font-bold mb-8 text-purple-700 text-center">
+                        Project Manager
+                    </h1>
 
-                    <input
-                        type="password"
-                        name="password"
-                        placeholder="Password"
-                        className="w-full border p-2 rounded"
-                        onChange={handleChange}
-                    />
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            className="w-full border border-purple-300 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400"
+                            onChange={handleChange}
+                        />
 
-                    <button className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">
-                        Register
-                    </button>
-                </form>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            className="w-full border border-purple-300 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400"
+                            onChange={handleChange}
+                        />
 
-                <p className="mt-4 text-center text-sm">
-                    Already have an account?{" "}
-                    <Link to="/" className="text-blue-600">
-                        Login
-                    </Link>
-                </p>
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            className="w-full border border-purple-300 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-400"
+                            onChange={handleChange}
+                        />
+
+                        <button className="w-full bg-purple-600 text-white py-4 rounded-xl hover:bg-purple-700 transition duration-200 text-lg font-semibold">
+                            Register
+                        </button>
+                    </form>
+
+                    <p className="mt-6 text-center text-sm text-gray-600">
+                        Already have an account?{" "}
+                        <Link to="/" className="text-purple-700 font-medium hover:underline">
+                            Login
+                        </Link>
+                    </p>
+                </div>
+
             </div>
         </div>
     );
